@@ -6,5 +6,9 @@ RSpec.describe Calculator do
     it 'returns 0 if string is empty' do
       expect(Calculator.add("")).to eq(0)
     end
+
+    it 'returns the number itself if a single number' do
+      expect(Calculator.add('1')).to eq(1)
+    end
   end
 end
